@@ -1,0 +1,131 @@
+//text
+.x-large {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    cursor: default;
+}
+
+.x-large3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    cursor: default;
+}
+
+.lead {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    cursor: default;
+}
+
+.large {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    cursor: default;
+}
+
+.text-primary {
+    color: $primary-color;
+}
+
+//background
+.bg {
+    &-primary {
+        @include set-background($primary-color);
+    }
+    &-light {
+        @include set-background($light-color);
+        border: #ccc 1px solid
+    }
+    &-dark {
+        @include set-background($dark-color);
+    }
+    &-danger {
+        @include set-background($danger-color);
+    }
+    &-white {
+        @include set-background(#fff);
+        border: #ccc 1px solid
+    }
+}
+
+//button
+.btn {
+    display: inline-block;
+    background: $dark-color;
+    padding: 0.4rem 1.3rem;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.2s ease-in;
+    &.btn-dark {
+        @include set-background($dark-color);
+        &:hover {
+            background: lighten($dark-color, 5%);
+            color: $primary-color;
+        }
+    }
+    &.btn-success {
+        @include set-background($success-color);
+        &:hover {
+            background: lighten($success-color, 5%);
+        }
+    }
+    &.btn-danger {
+        @include set-background($danger-color);
+        &:hover {
+            background: lighten($danger-color, 5%);
+        }
+    }
+    &.btn-primary {
+        @include set-background($primary-color);
+        &:hover {
+            background: lighten($primary-color, 5%);
+        }
+    }
+    &.btn-light {
+        @include set-background($light-color);
+        &:hover {
+            background: lighten($dark-color, 60%);
+            color: #fff;
+        }
+    }
+    &:hover {
+        background: lighten($danger-color, 20%);
+        color: #fff;
+    }
+    &.btn-login {
+        @include set-background(rgb(255, 123, 0));
+        border: 1 solid;
+        width: 16rem;
+        border-radius: 5rem;
+        transition: all 0.2s ease-in;
+        &:hover {
+            background: lighten(black, 50%);
+            color: #fff;
+        }
+    }
+}
+
+//dark background
+.dark-overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#eye {
+    position: relative;
+    top: 1.5rem;
+    left: 6.5rem;
+    color: gray;
+    cursor: pointer;
+}
+
+//picture
+.round-img {
+    border-radius: 50%;
+}

@@ -1,0 +1,29 @@
+.form {
+    &-group {
+        top: 0;
+        // margin-top: 0.5rem ;
+        margin-bottom: 0.5rem;
+    }
+    &-text {
+        display: block;
+        margin-top: 0.3rem;
+    }
+    input[type='text'],
+    input[type='password'],
+    select,
+    textarea {
+        display: block;
+        width: 16rem;
+        padding: 0.4rem;
+        font-size: 1rem;
+        border: 1px solid rgba(0, 0, 0, 0.7);
+        border-radius: 5rem;
+        background-color: rgba(255, 255, 255, 0.9);
+        &:hover {
+            color: #000000;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+}

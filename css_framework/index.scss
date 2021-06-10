@@ -1,0 +1,173 @@
+@import "config";
+@import "utilities";
+@import "form";
+@import "controller";
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 1 rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 1rem;
+    background: #fff;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 123, 0);
+    //  padding: 0.45rem;
+    margin: 0 0.25rem;
+    transition: all 0.2s ease-in;
+    &:hover {
+        color: $primary-color;
+    }
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* navbar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.9rem 2rem;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 3rem;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-bottom: 1px solid rgba(255, 123, 0, 90%);
+    opacity: 0.9;
+}
+
+.sidebar {
+    position: absolute;
+    border-right: 1px solid #333;
+    border-top: 1px solid #333;
+    height: 100vh;
+    width: 12rem;
+    background: rgb(255, 123, 0);
+}
+
+.sidebar-right {
+    position: absolute;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    margin-left: 68rem;
+    height: 100vh;
+    width: 12rem;
+    background: rgb(255, 123, 0);
+}
+
+.menu {
+    display: flex;
+    float: right;
+}
+
+.text {
+    font-size: 2rem;
+    padding-left: 1rem;
+    color: #fff;
+}
+
+.item {
+    font-size: 18px;
+    padding: 0rem 1rem;
+}
+
+.ad {
+    font-size: 1.5rem;
+    color: #fff;
+    transition: all 0.2s ease-in;
+    &:hover {
+        color: rgb(255, 123, 0);
+    }
+}
+
+// section landing
+.picture {
+    background: url("../img/rus.jpg") no-repeat center center/cover;
+}
+
+.landing {
+    position: relative;
+    background: url("../img/rus.jpg") no-repeat center center/cover;
+    height: 100vh;
+    &-inner {
+        color: #fff;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+.landing2 {
+    position: relative;
+    background: url("../img/rus.jpg") no-repeat center center/cover;
+    height: 140vh;
+}
+
+//container
+.container {
+    max-width: $max-width;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+    margin: 3rem 0 0 3rem;
+}
+
+//Developer page
+.profile {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-gap: 2rem;
+    align-items: center;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 1rem;
+}
+
+@media (max-width: 942px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.9rem 2rem;
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        height: 3rem;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-bottom: 1px solid rgba(255, 123, 0, 90%);
+        opacity: 0.9;
+    }
+    .text {
+        font-size: 1.2rem;
+        padding-left: 1rem;
+        color: #fff;
+    }
+    .item {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 1366) {}
