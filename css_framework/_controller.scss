@@ -1,0 +1,47 @@
+.box {
+    background-color: white;
+    border-top: solid 1px #333;
+    border-bottom: solid 1px #333;
+    border-right: solid 1px #333;
+    top: 0;
+    padding-left: 5px;
+    width: 18rem;
+}
+
+.box2 {
+    border-right: solid 1px #333;
+    background-color: rgb(255, 123, 0);
+    border-bottom: solid 1px #333;
+    padding-left: 5px;
+    width: 18rem;
+}
+
+.boxbutton {
+    color: #fff;
+    background-color: #17a2b8;
+    cursor: pointer;
+    &:hover {
+        background-color: #333;
+        transition: all 0.2s ease-in;
+    }
+}
+
+.boxbutton-red {
+    color: #fff;
+    background-color: $danger-color;
+    cursor: pointer;
+    &:hover {
+        background-color: #333;
+        transition: all 0.2s ease-in;
+    }
+}
+
+h4,
+h3 {
+    margin-bottom: 0;
+}
+
+#d {
+    height: 2rem;
+    width: 12rem;
+}
